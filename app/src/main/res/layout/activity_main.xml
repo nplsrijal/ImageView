@@ -1,18 +1,62 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/ic_launcher_foreground"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:content=".MainActivity"
 
-    <TextView
-        android:layout_width="wrap_content"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:orientation="horizontal"
+        >
 
-</android.support.constraint.ConstraintLayout>
+        <RadioGroup
+            android:id="@+id/rbtn_actor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rbtn_nischal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="Nischal Basnet"
+                android:layout_weight="1"/>
+
+            <RadioButton
+                android:id="@+id/rbtn_daya"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Daya Hang Rai"
+                android:layout_weight="1"/>
+
+            <RadioButton
+                android:id="@+id/rbtn_rajesh"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Rajesh Hamal"
+                android:layout_weight="1"/>
+
+        </RadioGroup>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
