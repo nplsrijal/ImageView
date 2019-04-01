@@ -23,7 +23,7 @@
             android:orientation="horizontal">
 
             <RadioButton
-                android:id="@+id/rbtn_nischal"
+                android:id="@+id/rdoNischal"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:checked="true"
@@ -31,14 +31,14 @@
                 android:layout_weight="1"/>
 
             <RadioButton
-                android:id="@+id/rbtn_daya"
+                android:id="@+id/rdoDaya"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Daya Hang Rai"
                 android:layout_weight="1"/>
 
             <RadioButton
-                android:id="@+id/rbtn_rajesh"
+                android:id="@+id/rdoRajesh"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Rajesh Hamal"
@@ -53,7 +53,8 @@
         >
         <ImageView
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:id="@+id/image_load"/>
     </LinearLayout>
 
 
